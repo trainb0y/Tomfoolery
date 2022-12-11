@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    id("fabric-loom")
     id("org.jetbrains.kotlin.jvm") version "1.7.21"
 }
 
@@ -11,5 +12,13 @@ repositories {
 }
 
 dependencies {
+    minecraft("com.mojang:minecraft:${property("minecraft_version")}")
+    mappings(loom.layered(){
+        officialMojangMappings()
+        "net.fabricmc:yarn:${property("yarn_mappings")}:v2"
+    })
+}
 
+loom {
+    splitEnvironmentSourceSets()
 }

@@ -25,8 +25,7 @@ dependencies {
         officialMojangMappings()
         "net.fabricmc:yarn:${property("yarn_mappings")}:v2"
     })
-
-    implementation(project(":common"))
+    implementation(project(":common", "namedElements"))
 
     modImplementation("net.fabricmc:fabric-loader:${property("loader_version")}")
     modImplementation("net.fabricmc.fabric-api:fabric-api:${property("fabric_api_version")}")
