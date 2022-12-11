@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "tomfoolery",
+  "version": "$version",
+  "name": "ClientTest",
+  "description": "I am very good at names!",
+  "authors": [
+    {
+      "name": "trainb0y",
+      "contact": {
+        "email": "trainb0ydev@gmail.com",
+        "discord": "trainb0y#7688"
+      }
+    }
+  ],
+  "contact": {
+    "issues": "https://github.com/trainb0y/tomfoolery/issues",
+    "sources": "https://github.com/trainb0y/tomfoolery",
+    "discord": "https://discord.gg/PPCvtMTXvP"
+  },
+  "license": "MIT",
+  "icon": "assets/tomfoolery/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "io.github.trainb0y.tomfoolery.Tomfoolery"
+      }
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric-language-kotlin": ">=1.8.6+kotlin.1.7.21"
+  },
+  "recommends": {
+    "modmenu": ">=4.0.0",
+    "minecraft": ">=1.19.2"
+  }
+}
