@@ -1,0 +1,8 @@
+name: TomfooleryServer
+version: '${version}'
+main: io.github.trainb0y.tomfoolery.server.TomfooleryServer
+api-version: 1.19
+prefix: tomfoolery
+# depend: [ Ion ]
+authors: [ trainb0y ]
+website: https://github.com/trainb0y/tomfoolery

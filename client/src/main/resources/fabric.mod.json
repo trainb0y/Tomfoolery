@@ -25,7 +25,7 @@
     "client": [
       {
         "adapter": "kotlin",
-        "value": "io.github.trainb0y.tomfoolery.Tomfoolery"
+        "value": "io.github.trainb0y.tomfoolery.client.Tomfoolery"
       }
     ]
   },
