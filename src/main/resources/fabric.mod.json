@@ -34,7 +34,7 @@
     "fabric-language-kotlin": ">=1.8.6+kotlin.1.7.21"
   },
   "recommends": {
-    "modmenu": ">=4.0.0",
-    "minecraft": ">=1.19.2"
+    "modmenu": ">=5.0.0",
+    "minecraft": ">=1.19.3"
   }
 }

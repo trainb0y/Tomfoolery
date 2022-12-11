@@ -14,7 +14,8 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
-	maven(uri("https://maven.gegy.dev"))
+	maven(uri("https://repo.virtualclient.gg/artifactory/virtualclient-public/"))
+	maven(uri("https://jitpack.io"))
 	mavenCentral()
 }
 
@@ -25,6 +26,7 @@ dependencies {
 	modImplementation("net.fabricmc:fabric-loader:${property("loader_version")}")
 	modImplementation("net.fabricmc.fabric-api:fabric-api:${property("fabric_api_version")}")
 	modImplementation("net.fabricmc:fabric-language-kotlin:${property("fabric_kotlin_version")}")
+	modImplementation(include("gg.virtualclient:virtualgui:${property("elementa_version")}")!!)
 }
 
 tasks {
